@@ -40,5 +40,19 @@ el compilador de java                   Ant      Estructura de proyecto le
 
 
 
+Que tipo de lenguaje es java si tuvieramos que ponerlo dentro de estas familias
+
+Imperativo* Le digo que hacer y en que orden hacerlo
+Declarativo  Excel, SQL, HTML, lenguajes funcionales (lisp, haskell, clojure)
+
+Estructurado* que tiene estrucutras de control, if for while switch
+Orientado a objetos*
+
+Fuertemente tipado*
+Debilmente tipado
+
+
+
+
 
 
