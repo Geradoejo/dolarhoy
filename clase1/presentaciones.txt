@@ -1,0 +1,8 @@
+Fabian     Ampliar conocimientos
+Facundo    En la carrera de java
+Gerardo    Curso java puntal
+Ivan       Universidad Litoral c++. Ahora java
+Leandro    PHP, javascript, MySQL
+Mariano    Carrera de Java
+Magali     UTN, c, c++
+

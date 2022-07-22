@@ -1,0 +1,44 @@
+
+Compilador java ----------------------> plataforma java
+
+Archivo de texto ---------------------> bytecode entiende java
+
+Puedo inventar un lenguaje ?
+SI tengo que escribir un
+compilador ---------------------------> bytecode entiende java
+
+
+c# -----------------------------------> .net
+Si, perfectamente --------------------> Especificacion set de 
+                                        instrucciones.
+
+Que hay en el source code de java
+en cada archivo ??????????   ---------> Una clase publica con el 
+                                        mismo nombre que el archivo
+
+Customer.java                           public class Customer {
+                                        }
+
+Ide sirve ???
+   para que ???                         Mejorar la productivdad
+
+
+En que herramientas se apoya
+el compilador de java                   Ant      Estructura de proyecto le 
+                                                 especifico las dependencias.
+                                        Maven
+                                                 Estructura de proyecto (convencion)
+                                                 Dependencias transitivas
+                                                 Dependencias de dependencias
+                                                 A -> a1 yo al incorporar A tamien
+                                                 me baja a1.
+                                                 pom.xml es donde se inscriben las
+                                                 dependencias.    
+                                        Gradle
+                                                 Similar a maven escrito en un lenguaje
+                                                 que se llama Groovy o Kotlin
+
+
+
+
+
