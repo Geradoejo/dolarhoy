@@ -149,12 +149,113 @@ Cliente -> public class Cliente {}
       public int suma(int x, int y) {
           return x + y
       }
+      public int suma(int x, int y, int z) {
+         return x + y + z;
+      }
    }
   
    Mi objetivo es sumar 3 + 2 + 5
 
    Como lo hago ???
 
-   
+   var total = suma(3, suma(2, 5));
+   // Esto se llama composicion
+
+   // Lo que sigue se llama sobrecarga y consiste
+   // en que el compilador se aviva de que metodo
+   // corresponde invocar
+
+   var total = suma(3, 2, 5);
+
+10) Herencia
+
+    Herencia es un tipo de relacion entre dos clases donde
+    una es Hija de la otra.
+
+    Establece una relacion de "es un"
+
+    class Mariano extends Gismondi {
+    }
+
+    class ConectionDB extends Connection {
+    }
+
+    Herencia de Tipos
+    Camion extends Vehiculo (NNNNNNNNNOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO)
+
+    Herencia de comportamiento 
+    class DirectoryWriter extends FileSystemWriter {
+        public void write();
+    }    
+    class FileWriter extends FileSystemWriter {
+    }
+
+    Se usa ? (CON MU CHA      CAU TE LA)
+
+    Hay Otro tipo de Herencia que se llama Inversion de Control.
+    (LUZ VERDE)
+
+11) Interfaces
+
+    Que son ?
+
+    Una forma de verlo es que son clases abstractas con todos sus metodos abstractos
+
+    Simplemente nombra a unos metodos que tiene unos argumentos pero no implementa
+    nada.
 
 
+    Supongamos que yo tengo esta interfaz:
+
+    public interface ObjetoVolador {
+        void despegar();
+    }
+    public class Helicoptero implements ObjetoVolador {
+        void despegar() {
+           // Mecanismo de despege vertical, etc...
+        }
+    }
+
+    ObjectoVolador[] objetosVoladores = new ObjectoVolador[10];
+
+    for (int x = 1; x < 10; x++) {
+       objectosVoladores[x].despegar();
+    }
+
+12) Ejemplos de interfaces en la vida cotidiana
+
+    Canilla de Agua, Tiene una interfaz de 3/4
+    LA PARED NO SABE QUE CANILLA VAS A ACOPLAR
+    Plastica, Cobre, Oro, Natural, Flexible de 3/4
+    Adaptador 3/4 a 1/2
+
+    Switch es una interfaz que puede venir en varios
+    Saboras, ON/OFF y Potenciometro.
+
+    Tres patas del enchufe son Fase, Neutro, Tierra.
+    
+    Rieles, me permiten poner otro tipo de cajon
+    
+    Minipimer.... Cual es mejor ? la que se lava ? y se desacopla ?
+    o lo que viene todo junto ?
+
+    Puerta USB, MINI USB, HDMI ......
+    
+    RedBull Uso motor Renault y Ahora motor Honda.
+
+    
+
+
+    J2EE SABEMOS QUE ES ????
+
+    Una serie de especificaciones ? Generalmente interfaces
+    Que sirven para que muchos providers hagan su propia version del 
+    Software
+
+    RedHat
+    Apache
+    Eclipse
+    
+
+
+        
