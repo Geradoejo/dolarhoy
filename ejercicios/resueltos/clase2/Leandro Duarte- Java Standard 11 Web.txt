@@ -1,0 +1,58 @@
+
+
+public class MyClass {
+     public static void main(String args[]) {
+           int n=3;
+           
+            while(n!=1){ 
+              if((n%2)==0){
+                n=n/2;
+ 
+                 System.out.println(n);
+                   }
+                    else{
+                       n=(3*n)+1;
+                         System.out.println(n);
+                       }
+                      }
+                     }
+                    }
+                   }  
+
+
+   //////////////////////////////////////////////
+
+
+*Los datos primitivos son los datos que no son objetos, puedem
+manejarse simplemente asignandole el valor a una varieble,
+mientras que para los datos objetos se necesitaria instanciar
+una clase para poder empezar a trabajar con ellos.
+
+*Wrapper: a travez de erramientas nos permite tratar tipos de
+datos primitivos como objetos.
+
+*
+String [] apellido = new String[2];
+apellido[0]= "Ramirez";
+apellido[1]= "Godoy";
+System.out.println(apellidos[0]);
+System.out.println(apellidos[1]);
+
+////otro ejemplo//////
+
+String [] apellidos= {"ramirez","godoy","herrera"};
+System.out.println(apellidos[0]);
+System.out.println(apellidos[1]);
+System.out.println(apellidos[2]);
+
+
+*
+-Un objeto es lo mismo que un objeto real,solo que se han
+abstraido las cualidades que no interesan a efectos del desarrollo
+/programacion
+
+-Un metodo es el comportamiento que tendra dicho objeto.
+
+-Una clase no es mas que un "molde para creo objetos".
+
+

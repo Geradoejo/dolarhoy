@@ -1,0 +1,160 @@
+Una clase es un template, o Plantilla para crear objetos.
+
+ESTO LO DICEN LOS MANUALES DE LOS 80s.
+
+Tiene sentido que exista una clase ? 
+
+public class ServicioGrabaArchivo {
+   
+
+}
+
+var x1 = new ServicioGrabaArchivo();
+var x2 = new ServicioGrabaArchivo();
+
+ServicioGrabaArchivo[] xs = new ServicioGrabaArchivo[] {}
+
+----------------------------------------------------------------
+
+// Estructura de datos
+
+class Vehiculo {
+  String marca
+  String modelo
+  String color
+}
+
+// Servicio
+
+public class ServicioManipularVehiculo {
+   
+}
+
+public class ServicioGrabaArchivo {
+   public void grabar(Vehiculo v) {
+      // aca adentro tengo la logica para grabar el vehiculo
+   }
+}
+
+--------------------------------------------------
+
+public class Cliente {
+   public Integer edad;
+   public Integer nombre;
+}
+
+ServicioValidadorHipoteca {
+   public void validarCliente(Cliente c) {
+   }
+}
+
+ServicioValidadorAlcoholEnGel(Cliente c) {
+}
+
+---------------------------------------------------
+
+Compilador para que sirve ?????
+
+Source --> Bytecode (Lenguaje interpretable por java)
+
+Aplica muchas reglas sintacticas, y obviamente si estan mal
+esas reglas las rebota. NO compila.
+
+El interprete php, javascript (sin compilador hace lo mismo)
+
+---------------------------------------------------
+Reglas del compilador
+---------------------------------------------------
+
+1) El archivo debe llamarse como la clase publica que esta dentro 
+
+Cliente -> public class Cliente {}
+
+2) No puede existir dos metodos que tengan la misma firma
+
+   ejemplo: public void grabar(Cliente c)
+            public void grabar(Cliente c)
+
+   Si puede existir esto 
+            public void grabar(String s)
+
+3) Hay metodos y identificadores que pueden ser static
+  
+   static significa que ese identificador o ese metodo pertenece
+   a la clase y NO a la instancia de la clase (al servcio)
+
+4) Ejemplo de static 
+
+   public class servicioA {
+      public static int a;
+   }
+
+   var s = new ServicioA();
+   var h = new ServicioA();
+
+   s.a = 10;
+   System.out.println(h.a); // 10
+
+5) Vamos a hacer el siguiente ejercicio
+
+   Copiar el codigo de arriba y probar con static y sin static
+
+6) Este va a dar error de compilacion
+
+   public class ServicioA {
+       private int a;
+
+       public static void mutarIdentificadorA() {
+          a++;
+       }
+   }
+
+7) Regla de inicializacion en el scope de clase ?
+   Las variables se inicializan solas
+   En el scope de los metodos si no inicializo una
+   variable es error de compilacion.
+
+
+8) Constructor
+
+   public class ServicioA {
+      public ServicioA() {
+         // Si un metodo no tiene tipo de retorno
+         // Ademas se llama Igual que la clase ?
+         // Es un constructor
+         // El constructor es lo primero que se llama al hacer new
+         
+         System.out.println("Estoy dentro del constructor ServicioA");
+      }
+   }
+
+   El operador new dispara 2 punteros, uno hacia atraz, y otro hacia adelante
+
+   Ejemplo
+
+   public class ServicioA {
+      public ServicioA() {
+         // El puntero que va hacia adelante tiene otro sentido
+         // Que en el scope de los metodos dentro de serivicio A ?
+         // Yo pueda tener el puntero al objeto creado.      
+         // el segundo puntero se llama this
+         System.out.println(this);
+      }      
+   }
+
+   var s = new ServicioA();
+   System.out.println(s);
+   
+9) class ServicioA {
+      public int suma(int x, int y) {
+          return x + y
+      }
+   }
+  
+   Mi objetivo es sumar 3 + 2 + 5
+
+   Como lo hago ???
+
+   
+
+
