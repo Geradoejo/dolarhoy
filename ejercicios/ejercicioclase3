@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public void jugar (string jugador1, string jugador2)
+{
+	if (jugador1 == jugador2)
+	{
+		system.out.print ("Empate");
+	}
+	else
+	{
+	switch jugador1
+		case "Piedra"
+			if (jugador2 == "Papel")
+			{
+				system.out.print ("Gana el jugador 2")
+			}
+			else
+			{
+				system.out.print ("Gana el jugador 1")
+			}
+		case "Papel"
+			if (jugador2 == "Piedra")
+			{
+				system.out.print ("Gana el jugador 1")
+			}
+			else
+			{
+				system.out.print ("Gana el jugador 2")
+			}
+		case "Tijera"
+			if (jugador2 == "Piedra")
+			{
+				system.out.print ("Gana el jugador 2")
+			}
+			else
+			{
+				system.out.print ("Gana el jugador 1")
+			}
+	}
+}
+
+public static void main(String[] args) {	Scanner objeto = new Scanner(System.in);
+	int i = 0;
+	while (i != 2) {
+		String jug1 = objeto.nextLine();
+		System.out.print("Jugador 1: Ingrese Piedra, Papel o Tijera");
+		String jug2 = objeto.nextLine();
+		System.out.print("Jugador 2: Ingrese Piedra, Papel o Tijera");
+		jugar (jug1, jug2);
+		system.out.print ("Desea seguir jugando? Pulse 1 para si, 2 para no");
+		i = objeto.nextLine();
+	}
+}
